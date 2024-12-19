@@ -1,0 +1,199 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh; /* Full height of viewport */
+}
+
+/* Header */
+header {
+  background-color: #f8a000;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Main Content Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  flex-grow: 1; /* Allow this to grow and fill available space */
+}
+
+/* Menu List */
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.menu-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-image {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 200px; /* Optional: Set max height */
+  object-fit: cover; /* Keep the image proportional */
+  border-radius: 8px 8px 0 0;
+}
+
+.menu-item h3 {
+  margin: 1rem 0 0.5rem;
+  color: #f8a000;
+  font-size: 1.2rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.price {
+  font-size: 1.1rem;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+form input[type="number"] {
+  width: 50px;
+  padding: 0.3rem;
+  margin-right: 0.5rem;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.btn-order {
+  background-color: #f8a000;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s ease-in-out;
+}
+
+.btn-order:hover {
+  background-color: #ffbd01;
+}
+
+.no-menu {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+}
+
+/* Navigation Links */
+.navigation-links {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.btn-nav {
+  text-decoration: none;
+  color: #fff;
+  background-color: #f8a000;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  display: inline-block;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.btn-nav:hover {
+  background-color: #ffbd01;
+}
+
+/* Style the form container */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Style for the input label */
+label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Style for the "Jumlah" input field */
+input[type="number"] {
+  width: 80px;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #ffbd01;
+}
+
+/* Style for the Pesan button */
+button {
+  background-color: #ffbd01; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: bgcolor 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #efaf00; /* Slightly darker green */
+  transform: translateY(-2px);
+}
+
+button :active {
+  background-color: #ffbd01;
+  transform: translateY(0);
+}
+
+/* Footer */
+footer {
+  background-color: #f8a000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto; /* Push footer to bottom */
+}
